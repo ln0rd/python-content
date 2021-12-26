@@ -5,8 +5,8 @@ This repository is a compiled content about Python.
 Projetcs:
 
 1. Flask flask api
-   - Token JWT
-   - REST API
+   1. Token JWT
+   2. REST API
 
 #### Dependencies
 
