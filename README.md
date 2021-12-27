@@ -4,7 +4,7 @@ This repository is a compiled content about Python.
 
 Projetcs:
 
-- Flask flask api
+- Flask api
   - Token jwt
   - Rest api
 
