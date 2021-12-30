@@ -26,3 +26,13 @@ print(start_with_s)
 # way 2
 start_with_s = [friend for friend in friends if friend.startswith('S')]
 print(start_with_s)
+
+
+# you can apply a function in each element in a list using map
+def double(value):
+    return value * 2
+
+
+sequence = [1, 3, 5, 9]
+doubled = list(map(double, sequence))
+print(doubled)
