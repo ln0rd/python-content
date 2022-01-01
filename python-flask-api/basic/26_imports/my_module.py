@@ -1,3 +1,6 @@
+from lib import mylib
+
+
 def divide(dividend: int, divisor: int) -> int:
     return int(dividend / divisor)
 
