@@ -7,7 +7,7 @@ def divide(divided: int, divisor: int) -> int:
     return int(divided / divisor)
 
 
-def calculate(*values: int, operator):
+def calculate(*values: int, operator: callable):
     return operator(*values)
 
 
@@ -16,7 +16,7 @@ print(f'result of operator is: {result}')
 
 
 # function to search something in the index
-def search(sequence, expected, finder):
+def search(sequence: list, expected: any, finder: callable):
     for elem in sequence:
         if finder(elem) == expected:
             return elem
