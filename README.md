@@ -8,6 +8,8 @@ Projetcs:
   - Basic content
   - Token jwt
   - Rest api
+- Django Project
+- Django Simple Mock
 
 #### Dependencies
 
