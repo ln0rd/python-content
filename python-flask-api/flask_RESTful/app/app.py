@@ -32,6 +32,15 @@ class Item(Resource):
         items.append({'name': name, 'price': data['price']})
         return {'items': items}, 201
 
+    @jwt_required()
+    def delete(self, name):
+        item = next(filter(lambda item: item['name'] == name, items), None)
+        if item != None:
+            items.remove(item)
+            return {'message': "{} removed".format(name)}
+
+        return {'message': '{} not identified in items'.format(name)}
+
 
 class ItemList(Resource):
     def get(self):
