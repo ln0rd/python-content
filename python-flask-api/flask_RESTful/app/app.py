@@ -41,6 +41,16 @@ class Item(Resource):
 
         return {'message': '{} not identified in items'.format(name)}
 
+    def put(self, name):
+        data = request.get_json()
+        item = next(filter(lambda x: x['name'] == name, items), None)
+        if item is not None:
+            item = {'name': name, 'price': data['price']}
+            items.append(item)
+            return item
+        item.update(item)
+        return item
+
 
 class ItemList(Resource):
     def get(self):
