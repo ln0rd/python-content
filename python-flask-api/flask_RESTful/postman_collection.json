@@ -67,7 +67,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDI2NDQ3NjcsImlhdCI6MTY0MjY0NDQ2NywibmJmIjoxNjQyNjQ0NDY3LCJpZGVudGl0eSI6MX0.lQtScwY6MawN9JHAmH2p5GUVeLyscQCs2DEcOg4rTsg",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDI2OTkyMTYsImlhdCI6MTY0MjY5ODkxNiwibmJmIjoxNjQyNjk4OTE2LCJpZGVudGl0eSI6MX0.SPeH2gC4WhfM88nZxmrNhSVE1EJhk-x1fCBq2ZYKZCQ",
 						"type": "default"
 					}
 				],
@@ -104,7 +104,7 @@
 					"raw": "{\n    \"price\": 230.01\n}"
 				},
 				"url": {
-					"raw": "127.0.0.1:5000/items/sword",
+					"raw": "127.0.0.1:5000/items/Sword",
 					"host": [
 						"127",
 						"0",
@@ -114,7 +114,7 @@
 					"port": "5000",
 					"path": [
 						"items",
-						"sword"
+						"Sword"
 					]
 				}
 			},
@@ -136,7 +136,7 @@
 					"raw": "{\n    \"price\": 40.55\n}"
 				},
 				"url": {
-					"raw": "127.0.0.1:5000/item/<name>",
+					"raw": "127.0.0.1:5000/items/Sword",
 					"host": [
 						"127",
 						"0",
@@ -145,8 +145,8 @@
 					],
 					"port": "5000",
 					"path": [
-						"item",
-						"<name>"
+						"items",
+						"Sword"
 					]
 				}
 			},
@@ -161,6 +161,11 @@
 						"key": "Content-Type",
 						"value": "application/json",
 						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "JWT eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NDI2NDU2MDQsImlhdCI6MTY0MjY0NTMwNCwibmJmIjoxNjQyNjQ1MzA0LCJpZGVudGl0eSI6MX0.aQa5gkbcWe4c16SjTK5tFuG0fcpw2TGHtpnDRuf0XwY",
+						"type": "default"
 					}
 				],
 				"body": {
@@ -168,7 +173,7 @@
 					"raw": ""
 				},
 				"url": {
-					"raw": "127.0.0.1:5000/item/<name>",
+					"raw": "127.0.0.1:5000/items/sword",
 					"host": [
 						"127",
 						"0",
@@ -177,8 +182,8 @@
 					],
 					"port": "5000",
 					"path": [
-						"item",
-						"<name>"
+						"items",
+						"sword"
 					]
 				}
 			},
